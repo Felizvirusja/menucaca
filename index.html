@@ -16,24 +16,32 @@
   <!-- Sweetalert -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-  <!-- El núcleo JS SDK de Firebase siempre es requerido y debe listarse primero.
+  <!-- El núcleo JS SDK de Firebase siempre es requerido y debe listarse primero -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
 
 
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
 
-
-    REEMPLAZAR EL COMENTARIO CON LA CONFIGURACIÓN DE LA BASE DE DATOS FIREBASE.
-
-
-
-
-
-  -->
- 
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyDQVKTG-ucgV29mOndbz8hu1tQ_udG8eO4",
+      authDomain: "menu-ar-2e052.firebaseapp.com",
+      projectId: "menu-ar-2e052",
+      storageBucket: "menu-ar-2e052.appspot.com",
+      messagingSenderId: "25022025516",
+      appId: "1:25022025516:web:464cb033e27b33ff2de689",
+      measurementId: "G-FV08GKBE0P"
+    };
+    // Inicializar Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 
   <!-- StyleSheet local -->
   <link href="./style.css" rel="stylesheet" />
 
-  <!-- Archivos JS -->
+  <!--Archivos JS-->
   <script src="./js/markerHandler.js"></script>
   <script src="./js/addMarkers.js"></script>
   <script src="./js/addButtons.js"></script>
